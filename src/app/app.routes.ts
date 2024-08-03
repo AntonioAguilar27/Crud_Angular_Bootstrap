@@ -6,6 +6,7 @@ import { AddEditProductComponent } from './features/add-edit-product/add-edit-pr
 export const routes: Routes = [
     {path: 'products', component: ListProductsComponent},
     { path: 'add', component: AddEditProductComponent },
-    {path: 'cart', component: CartComponent},
-    { path: 'edit/:id', component: AddEditProductComponent}
+    { path: 'edit/:id', component: AddEditProductComponent},
+    { path: '', component: ListProductsComponent},
+    { path: '**', redirectTo: 'products', pathMatch: 'full'}
 ];
