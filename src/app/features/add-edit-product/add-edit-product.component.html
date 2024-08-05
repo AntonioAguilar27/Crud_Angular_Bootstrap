@@ -1,1 +1,23 @@
-<p>add-edit-product works!</p>
+<div class="row mt-2">
+    <div class="col-lg-4 offset-lg-4 ">
+        <div class="card border-primary mb-3" style="max-width: 40rem;">
+            <div class="card-header text-center">Agregar producto</div>
+                <div class="card-body">
+                    <form [formGroup]="form">
+                        <input formControlName="name" type="text" class="form-control" placeholder="Ingrese nombre">
+                        <input formControlName="description" type="text" class="form-control mt-3" placeholder="Ingrese descripcion">
+                        <input formControlName="price" type="text" class="form-control mt-3" placeholder="Ingrese precio">
+                        <input formControlName="stock" type="text" class="form-control mt-3" placeholder="Ingrese stock">
+                        <div class="row mt-3 text-center">
+                            <div class="col-lg-6">
+                                <button routerLink="" type="button" class="btn btn-outline-primary ">Cancelar</button>
+                            </div>
+                            <div class="col-lg-6">
+                                <button type="button" class="btn btn-outline-success">Aceptar</button>
+                            </div> 
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+</div>
